@@ -202,6 +202,8 @@ let tweets = {
   },
 }
 
+// delayed by 1 second
+// if resolved, copy the users
 export function _getUsers () {
   return new Promise((res, rej) => {
     setTimeout(() => res({...users}), 1000)
